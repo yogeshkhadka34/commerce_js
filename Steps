@@ -1,0 +1,4 @@
+# Create react app
+npx create-react-app ./
+# Install dependencies Material UI and Commerce JS
+npm install @material-ui/core @material-ui/icons @chec/commerce.js
