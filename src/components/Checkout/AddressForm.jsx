@@ -70,15 +70,20 @@ const AddressForm = ({ checkoutToken, next }) => {
     if (checkoutToken) {
       fetchShippingCountries(checkoutToken);
     }
+    // eslint-disable-next-line
   }, [checkoutToken]);
 
   useEffect(() => {
     if (shippingCountry) fetchShippingSubdivisions(shippingCountry);
+    // eslint-disable-next-line
   }, [shippingCountry]);
+  // eslint-disable-next-line
 
   useEffect(() => {
     if (shippingSubdivision) fetchShippingOptions();
+    // eslint-disable-next-line
   }, [shippingSubdivision]);
+  // eslint-disable-next-line
 
   const methods = useForm();
   return (

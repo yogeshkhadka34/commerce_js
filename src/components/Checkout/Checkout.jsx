@@ -12,7 +12,7 @@ import PaymentDetails from "./PaymentDetails";
 import Confirmation from "./Confirmation";
 import { commerce } from "../../lib/commerce";
 import Spinner from "../Spinner";
-import { Navigate, useNavigate } from "react-router-dom";
+// import { Navigate, useNavigate } from "react-router-dom";
 
 const Checkout = ({ cart, setCart }) => {
   const steps = ["Shipping Address", "Payment Details"];
@@ -24,7 +24,7 @@ const Checkout = ({ cart, setCart }) => {
   const handleNext = async () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
     if (activeStep === steps.length - 1) {
-      const response = await commerce.cart.delete();
+      await commerce.cart.delete();
 
       setCart(null);
 
