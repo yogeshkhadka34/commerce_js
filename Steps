@@ -1,4 +1,13 @@
 # Create react app
+
 npx create-react-app ./
-# Install dependencies Material UI and Commerce JS
-npm install @material-ui/core @material-ui/icons @chec/commerce.js
+
+# Install dependencies Material UI, Commerce JS, Stripe, React Router, React Hook form
+
+npm install @material-ui/core @material-ui/icons @chec/commerce.js @stripe/react-stripe-js @stripe/stripe-js
+npm install @react-router-dom @react-hook-form
+
+# Remove src folder as you don't need all and create new one yourself
+
+html-react-parser to parse htmls
+loading state so that undefined errors is not thrown
